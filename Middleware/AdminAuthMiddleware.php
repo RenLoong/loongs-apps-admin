@@ -44,7 +44,9 @@ final class AdminAuthMiddleware implements MiddlewareInterface
             };
             $message = $rpcResponse->message !== '' ? $rpcResponse->message : '未登录或登录已失效';
 
-            return Api::fail($code, $message, $http);
+            $data = is_array($rpcResponse->data) ? $rpcResponse->data : null;
+
+            return Api::fail($code, $message, $http, $data);
         }
 
         /** @var array<string, mixed> $proj */
