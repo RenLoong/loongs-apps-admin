@@ -59151,7 +59151,7 @@ break
 case 1:return A.M(q,r)}})
 return A.N($async$JJ,r)}}
 A.bgW.prototype={
-$1(a){var s=A.bl5(A.bkF(a.eA($.vz(),t.N)+"/uuims/api",B.kL,B.Ux,B.hE,new A.bgV())),r=s.abR$
+$1(a){var s=A.bl5(A.bkF(a.eA($.vz(),t.N)+"/admin/api",B.kL,B.Ux,B.hE,new A.bgV())),r=s.abR$
 r.C(r,new A.Ht(a,s))
 return s},
 $S:305}
@@ -62238,7 +62238,7 @@ return A.f(s==null?"":s)}}
 A.ir.prototype={}
 A.Df.prototype={
 al(a){if(B.c.cq(a,"http://")||B.c.cq(a,"https://"))return a
-if(a==="/uuims/api")return"/"
+if(a==="/admin/api")return"/"
 if(B.c.cq(a,"/admin/api/"))return B.c.cI(a,10)
 return this.b+a},
 WE(a,b){return A.vK(this.a.a.D9(this.al(a),b,t.z))},
